@@ -26,3 +26,14 @@ function playRound(humanChoice, computerChoice) {
         humanScore += 1
     }
 }
+const computerSelection = getComputerChoice
+const humanSelection = getHumanChoice
+
+function playGame() {
+    for (let i = 0; i < 5; i++){
+        playRound(humanSelection(), computerSelection())
+    }
+    console.log((humanScore > computerScore) ? `You Won! with the total score of ${humanScore}` : `Computer Won! with the total 
+    score of ${computerScore}`)
+}
+playGame()
