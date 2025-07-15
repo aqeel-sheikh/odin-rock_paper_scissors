@@ -8,7 +8,7 @@ const rock = document.querySelector(".rock")
 const paper = document.querySelector(".paper")
 const scissors = document.querySelector(".scissors")
 
-const results = document.querySelector(".results")
+// const results = document.querySelector(".results")
 const currentResult = document.querySelector(".result")
 const finalResult = document.querySelector(".anouncement")
 
@@ -36,7 +36,7 @@ function playRound(humanChoice, computerChoice) {
 
     if (humanChoice === computerChoice) {
         currentResult.textContent = "Tie: You both choose " + humanChoice
-        results.appendChild(currentResult)
+        // results.appendChild(currentResult)
     }
     else if ((humanChoice === "rock" && computerChoice === "paper") || (humanChoice === "paper" && computerChoice === "scissors") || (humanChoice === "scissors" && computerChoice === "rock")) {
 

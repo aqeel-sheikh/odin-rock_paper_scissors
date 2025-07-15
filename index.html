@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <div class="btns">
-        <button class="rock">Rock</button>
-        <button class="paper">Paper</button>
-        <button class="scissors">Scissors</button>
-    </div>
-    <div class="results">
-        <p class="para1">Your Score:<span id="humanScore">0</span></p>
-        <p class="para2">Computer Score:<span id="compScore">0</span></p>
+    <div class="container">
+        <div class="images">
+            <img src="comp.png">
+            
+
+            <p class="para2"><span id="compScore">0</span></p>
+            <p class="para1"><span id="humanScore">0</span></p>
+
+            <img src="human.png">
+        </div>
+        <div class="results-container">
         <p class="result"></p>
+        <div class="anouncement"></div>
+        </div>
+        <div class="btns">
+            <div class="btn-pair">
+                <div><img class="rock" src="rock.jpg"></div>
+                <p class="rock img-text">Rock</p>
+            </div>
+            <div class="btn-pair">
+               <div><img class="paper" src="paper.jpg"></div> 
+                <p class="paper img-text">Paper</p>
+            </div>
+            <div class="btn-pair">
+                <div><img class="scissors" src="scissors.jpg"></div>
+                <p class="scissors img-text">Scissors</p>
+            </div>
+        </div>
     </div>
-    <div class="anouncement"></div>
     <script src="script.js"></script>
 </body>
+
 </html>
